@@ -1,0 +1,34 @@
+{
+  "name": "dv-project",
+  "version": "1.0.0",
+  "description": "Data Visualization Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js --mode=production",
+    "watch": "webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishaldodiya/dv-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishaldodiya/dv-project/issues"
+  },
+  "homepage": "https://github.com/vishaldodiya/dv-project#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "d3": "^5.15.1",
+    "d3-scale-chromatic": "^1.5.0",
+    "d3-simple-slider": "^1.6.5",
+    "leaflet": "^1.6.0"
+  }
+}

@@ -1,0 +1,167 @@
+#home {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh;
+}
+
+.map-container {
+    position: relative;
+    grid-column: 1 / span 4; 
+    grid-row: 1 / span 2;
+}
+
+.map-container #map {
+    height: 50vh;
+}
+
+.bubble-chart-container {
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 2;
+}
+
+.mark-icon {
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: wheat;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 5px;
+    left: 0px;
+    top: 0px;
+}
+
+.info-container {
+    grid-column: 5 / span 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.stats .reviews {
+    padding: 5px;
+    width: 100%;
+    border-right: 1px solid gray;
+}
+
+.stats .rating {
+    padding: 5px;
+    width: 100%;
+    border-right: 1px solid gray;
+}
+
+.stats .price {
+    padding: 5px;
+    width: 100%;
+    font-weight: 600;
+}
+
+.category {
+    padding: 5px 0;
+}
+
+.category span {
+    padding: 2px 5px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    display: inline-block;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
+.address {
+    margin-top: auto;
+    padding: 5px;
+    border-top: 1px solid gray;
+}
+
+.name {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid gray;
+    padding: 0 5px;
+}
+
+.userstat-container {
+    grid-column: 5 / span 2;
+    grid-row: span 2;
+}
+
+.heatmap {
+    grid-column: 5 / span 2;
+    grid-row: 2;
+}
+
+.bubble-chart-container svg circle {
+    transition: all 0.25s cubic-bezier(0.21, 1.46, 0.87, 1.01);
+}
+
+.bubble-chart-container h3 {
+    margin-bottom: 0;
+}
+
+.bubble-chart-container svg circle:hover {
+    transform: scale(1.1);
+}
+
+.slider-vertical {
+    grid-column: 4;
+    grid-row: 3 / span 2;
+}
+
+.recommendation {
+    grid-column: 7 / span 2;
+    grid-row: 1 / span 4;
+    overflow-y: scroll;
+}
+
+.recommendation h2 {
+    margin-top: 0;
+}
+
+.recommendation .category {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    z-index: 1;
+    background-color: white;
+}
+
+.recommendation .category span {
+    background-color: blanchedalmond;
+}
+
+.card {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: blanchedalmond;
+}
+
+.category-container {
+    padding: 30px 10px 10px 10px;
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

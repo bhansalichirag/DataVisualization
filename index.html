@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DV Project</title>
+
+    <!-- Load Data -->
+    <script src="data/data.js"></script>
+    <script src="data/user.js"></script>
+    <script src="data/food.js"></script>
+    <script src="data/recommend.js"></script>
+
+    <link href='css/style.css' rel='stylesheet'/>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+</head>
+<body>
+    <div id="home">
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        <div class="info-container">
+            <h2 class="name"></h2>
+            <div class="stats">
+                <div class="reviews"></div>
+                <div class="rating"></div>
+                <div class="price"></div>
+            </div>
+            <div class="category"></div>
+            <div class="address"></div>
+        </div>
+        <div class="heatmap"></div>
+        <div class="userstat-container"></div>
+        <div class="bubble-chart-container"></div>
+        <div class="slider-vertical"></div>
+        <div class="recommendation"></div>
+    </div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="lib/main.js"></script>
+</body>
+</html>
